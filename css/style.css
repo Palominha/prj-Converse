@@ -1,0 +1,154 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@100;800&display=swap');
+ 
+ :root{
+
+    /* Cores padrões */
+    --branco:#fff;
+    --preto:#000;
+    --azul-clarinho:#BEC6CF;
+   
+    /* Tons de marrons */
+    --marrom-clarinho:#9A7150;
+    --marrom-claro:#6E472E;
+    --marrom-medio:#18120F;
+    --marrom-cinza-claro:#211616;
+    --marrom-cinza-escurro:#1A1212;
+
+    /* Tons de Vermelho */
+    --vermelho:#7A0401;
+    --vinho-medio:#4D0201;
+    --vinho:#240201;
+    --vinho-sujo:#1A0B0B;
+
+    /* TOns de Cinza */
+    --cinza-claro:#828282;
+    --cinza-medio:#4D4D4D;
+    --cinza-escuro:#242323;
+
+    --gradient:110, 76, 36, 0.85;
+    --gradient2:42,58,74,0.85;
+
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    background-image: linear-gradient(rgba(var(--gradient)), rgba(var(--gradient2))), url(../img/chuva.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#main{
+    /* background-color: #4D0201; */
+    background: transparent;
+    width: 100%;
+    height: 70px;
+}
+
+#main .logo{
+    float: left;
+}
+
+.logo{
+    background: url(../img/logo-escrita.svg);
+    width: 190px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    margin-left:5%;
+    margin-top: 1.5em;
+}
+
+#main nav ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#main nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height:50px ;
+}
+
+#main nav ul li a{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 14px;
+    padding: 6px 13px;
+    transition: 0.4s all ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#main nav ul li a.active,
+#main nav ul li a:hover{
+    background:var(--vermelho) ;
+    color: var(--branco);
+    border-radius: 5px;
+    transition: 0.4s all ease-in-out;
+}
+
+.text{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top:54%;
+    left:40%;
+}
+
+.text h1{
+    color: var(--preto);
+    font-size: 100px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.img{
+    margin-top: -20px;
+}
+
+.text span{
+    width: 4px;
+    height: 30px;
+    background: var(--vermelho);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 3%;
+    left: -15px;
+}
+
+.text p{
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: var(--branco);
+    font-family: 'Raleway', sans-serif;
+}
+
+.text .btn{
+    width:150px;
+    height: 35px;
+    border: none;
+    background: var(--vermelho);
+    color: var(--branco);
+    transition: 0.5s all ease-in-out;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text .btn:hover{
+    background: transparent;
+    border: 2px solid var(--vermelho);
+    transition: 0.5s all ease-in-out;
+}
+
